@@ -32,15 +32,15 @@ let moduloUsuarios = {
     },
     filtrar : function(filtro){
         let listaDeUsuarios = this.leerJSON()
-        let UsuariosFiltradas = listaDeUsuarios.filter(function(usuario) {
-            return usuario.estado === filtro
+        let UsuariosFiltradas = listaDeUsuarios.filter(function(tarea) {
+            return tarea.estado === filtro
         })
         return UsuariosFiltradas
     },
     buscar : function(busqueda){
         let listaDeUsuarios = this.leerJSON();
-        let resultadoDeLaBusqueda = listaDeUsuarios.filter(function(usuario) {
-            return usuario.titulo.includes(busqueda)
+        let resultadoDeLaBusqueda = listaDeUsuarios.filter(function(tarea) {
+            return tarea.titulo.includes(busqueda)
         })
         return resultadoDeLaBusqueda
     }
