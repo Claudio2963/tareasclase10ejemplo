@@ -1,0 +1,17 @@
+[
+    {
+        "nombre": "Claudio",
+        "mail": "claudiovalin2963@gmail.com",
+        "password": "Claudio2963"
+    },
+    {
+        "nombre": "admin",
+        "mail": "admin@gmail.com",
+        "password": "terminada"
+    },
+    {
+        "nombre": "Maximo",
+        "mail": "maxidemichieli@gmail.com",
+        "password": "maximo123"
+    }
+]
