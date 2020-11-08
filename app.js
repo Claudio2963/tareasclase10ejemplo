@@ -14,21 +14,21 @@ switch (comando) {
         console.log('---------------------------------------------')
         for (let index = 0; index < usuarios.length; index++) {
             
-           console.log('Titulo de la tarea: ' + usuarios[index].titulo + ', con estado: ' +  usuarios[index].estado)
+           console.log('Titulo de la usuario: ' + usuarios[index].titulo + ', con estado: ' +  usuarios[index].estado)
         }
         break;
     case 'agregar' :
         let titulo = process.argv[3];
         let estado = process.argv[4];
-        moduloUsuarios.agregarTarea(titulo,estado)
+        moduloUsuarios.agregarUsuario(titulo,estado)
         console.log('---------------------------------------------')
-        console.log('------LA TAREA HA SIDO AGREGADA--------------')
+        console.log('------LA usuario HA SIDO AGREGADA--------------')
         console.log('---------------------------------------------')
         break;
     case 'deshacer':
         moduloUsuarios.deshacer();
         console.log('---------------------------------------------')
-        console.log('--------SE ELIMINÓ LA ÚLTIMA TAREA-----------')
+        console.log('--------SE ELIMINÓ LA ÚLTIMA usuario-----------')
         console.log('---------------------------------------------')
         break
     case 'filtrar':
@@ -37,8 +37,8 @@ switch (comando) {
         console.log('---------------------------------------------')
         console.log('----usuarios FILTRADAS POR ' + filtro.toUpperCase() + '-----------')
         console.log('---------------------------------------------')
-        usuariosFiltradas.forEach(function(tarea){
-            console.log('Titulo de la tarea: ' + tarea.titulo + ', con estado: ' +  tarea.estado)
+        usuariosFiltradas.forEach(function(usuario){
+            console.log('Titulo de la usuario: ' + usuario.titulo + ', con estado: ' +  usuario.estado)
         })
         break
     case 'buscar':
@@ -52,8 +52,8 @@ switch (comando) {
             console.log('---------------------------------------------')
             console.log('-----RESULTADO DE LA BUSQUEDA: ' + busqueda.toUpperCase() +'--------')
             console.log('---------------------------------------------')
-            resultadoDeLaBusqueda.forEach(function(tarea){
-                console.log('Titulo de la tarea: ' + tarea.titulo + ', con estado: ' +  tarea.estado)
+            resultadoDeLaBusqueda.forEach(function(usuario){
+                console.log('Titulo de la usuario: ' + usuario.titulo + ', con estado: ' +  usuario.estado)
             })
         }
         break
